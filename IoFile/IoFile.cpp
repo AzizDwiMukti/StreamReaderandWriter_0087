@@ -22,7 +22,7 @@ int main() {
 		if (baris == "q") break;
 		//menuliskan dan memasukan nilai dari 'baris' ke dalam file
 		outfile << baris << endl;
-}
+	}
 	//selesai dalam menulis sekkarang tutup filenya
 	outfile.close();
 
@@ -42,3 +42,9 @@ int main() {
 			cout << baris << '\n';
 		}
 		//tutup file tersebut setelah selesai
+		infile.close();
+	}
+	// jika tidak ditemukan file maka akan menampilkan ini
+	else cout << "Unable to open file";
+	return 0;
+}
